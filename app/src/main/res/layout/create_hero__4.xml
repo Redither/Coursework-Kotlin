@@ -29,6 +29,7 @@
         app:layout_constraintVertical_bias="0.436" />
 
     <NumberPicker
+        android:id="@+id/age_picker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +46,7 @@
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="30dp"
         android:background="@color/blue"
-        android:onClick="toGenderSettings"
+        android:onClick="toParam"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.99"
@@ -61,7 +62,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginBottom="30dp"
         android:background="@color/blue"
-        android:onClick="toParamSettings"
+        android:onClick="toGender"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

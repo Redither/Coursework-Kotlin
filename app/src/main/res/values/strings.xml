@@ -11,6 +11,8 @@
     <string name="createHero_innerage">Укажи свой возраст</string>
     <string name="createHero_age">Возраст</string>
     <string name="createHero_innerparam">Укажи свои параметры</string>
+    <string name="createHero_param_h">Рост:</string>
+    <string name="createHero_param_w">Вес:</string>
     <string name="createHero_finish">Спасибо, твой профиль создан. Я буду напоминать тебе заботиться о себе</string>
     <string name="btn_next">Кнопка далее</string>
     <string name="btn_prev">Кнопка назад</string>

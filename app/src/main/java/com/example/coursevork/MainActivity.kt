@@ -8,15 +8,15 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    var sPref: SharedPreferences? = null;
-    var firstInit = false;
+    var sPref: SharedPreferences? = null; //храним данные на устройстве
+    var firstInit = false; //перевенная указывает, что персонаж не создан.
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.hello_screen)
 
-        sPref = getSharedPreferences("UserData", MODE_PRIVATE)
-        firstInit = sPref?.getBoolean("notFirstInit", true)!!
+        sPref = getSharedPreferences("UserData", MODE_PRIVATE) //открывем таблицу пользовательских данных
+        firstInit = sPref?.getBoolean("notFirstInit", true)!! //пролучаем данные, был ли создан персонаж
 
         Handler().postDelayed({ //эмулирует задержку перед получением данных с сервера
             if (firstInit == false) {
@@ -26,6 +26,6 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, CreateHeroActivityIntro::class.java) //если не заполнял, то переведет на заполнение
                 startActivity(intent)
             }
-    }, 3000)
+    }, 3000) //задержка 3 секунды.
     }
 }

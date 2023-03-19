@@ -40,7 +40,7 @@ class CreateHeroGenderActivity : AppCompatActivity() {
     }
 
     fun toAgeSettings(view: View) {
-        val intent = Intent(this, CreateHeroActivityIntro::class.java)
+        val intent = Intent(this, CreateHeroAgeActivity::class.java)
         startActivity(intent)
     }
 
