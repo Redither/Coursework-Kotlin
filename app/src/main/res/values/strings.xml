@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">coursework</string>
+    <string name="app_intro">Приложение "Береги себя" - твой личный помощник в быту!</string>
+    <string name="hello">Привет!</string>
+    <string name="about_app">Это приложение создано для того, чтобы напоминать тебе заботиться о себе даже в те дни, когда у тебя очень много дел.</string>
+    <string name="createHero_intro">Подумай о себе как о персонаже игры, у которого есть потребности.</string>
+    <string name="createHero_letstart">Давай вместе создадим профиль такого персонажа</string>
+    <string name="createHero_choosegender">Выбери свой пол</string>
+    <string name="gender_male">Мужской</string>
+    <string name="gender_female">Женский</string>
+    <string name="createHero_innerage">Укажи свой возраст</string>
+    <string name="createHero_age">Возраст</string>
+    <string name="createHero_innerparam">Укажи свои параметры</string>
+    <string name="createHero_finish">Спасибо, твой профиль создан. Я буду напоминать тебе заботиться о себе</string>
+    <string name="btn_next">Кнопка далее</string>
+    <string name="btn_prev">Кнопка назад</string>
+    <string name="btn_settings">Настроить уведомления</string>
+    <string name="btn_ready">Готово</string>
+</resources>

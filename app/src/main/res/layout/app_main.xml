@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <ProgressBar
+        android:id="@+id/pb_water"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:padding="0dp"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="80dp"
+        android:progressDrawable="@xml/pb__horizontal_bold"
+        app:layout_constraintBottom_toTopOf="@+id/pb_food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_addwater"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/btn_addfood"
+        app:layout_constraintStart_toEndOf="@+id/pb_water"
+        app:srcCompat="@drawable/btn_add" />
+
+    <ProgressBar
+        android:id="@+id/pb_food"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:padding="0dp"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:minHeight="30dp"
+        android:progressDrawable="@xml/pb__horizontal_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_addfood"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pb_food"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_add" />
+
+    <ProgressBar
+        android:id="@+id/pb_rest"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:padding="0dp"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="80dp"
+        android:progressDrawable="@xml/pb__horizontal_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_food" />
+
+    <ImageButton
+        android:id="@+id/btn_addrest"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/blue"
+        app:layout_constraintStart_toEndOf="@+id/pb_rest"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addfood"
+        app:srcCompat="@drawable/btn_add" />
+
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="@string/btn_settings"
+        android:textColor="@color/blue"
+        android:backgroundTint="@color/white"
+        android:shadowRadius="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
