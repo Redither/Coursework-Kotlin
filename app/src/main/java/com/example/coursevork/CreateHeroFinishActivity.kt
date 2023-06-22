@@ -20,7 +20,7 @@ class CreateHeroFinishActivity :  AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.create_hero__6)
         sPref = getSharedPreferences("UserData", MODE_PRIVATE) //открывем таблицу пользовательских данных
-        firstInit = sPref?.getBoolean("notFirstInit", true)!! 
+        firstInit = sPref?.getBoolean("notFirstInit", true)!!
         gender = sPref?.getString("notFirstInit", "null")!!
         age = sPref?.getInt("notFirstInit", 1)!!
         weigth = sPref?.getInt("notFirstInit", 1)!!
